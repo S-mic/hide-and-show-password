@@ -41,7 +41,8 @@
 <body>
     <div class="input-box">
         <input type="password" placeholder="Password" id="password">
-        <img src="eye-close.png" id="eyeicon" alt="Toggle visibility">
+        
+    <img src="eye-icons/eye-close.png" id="eyeicon" alt="Toggle visibility">
     </div>
 
     <script>
@@ -52,10 +53,10 @@
         eyeicon.onclick = function() {
             if (password.type === "password") {
                 password.type = "text";
-                eyeicon.src = "eye-open.png"; // Ensure the path is correct
+                eyeicon.src = "eye-icons/eye-open.png"; // Ensure the path is correct
             } else {
                 password.type = "password";
-                eyeicon.src = "eye-close.png"; // Ensure the path is correct
+                eyeicon.src = "eye-icons/eye-close.png"; // Ensure the path is correct
             }
         }
     </script>
